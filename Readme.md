@@ -1,6 +1,19 @@
+<div align="center">
+
+![PyExec Compiler Logo](https://github.com/magi8101/pyexec-compiler/blob/main/docs/logo.png)
+
 # PyExec Complete API Reference
 
+> **⚠️ EDUCATIONAL PROJECT - NOT PRODUCTION READY**  
+> This is a learning-focused project to explore compilation techniques. NOT suitable for production use.
+
+[![PyPI version](https://badge.fury.io/py/pyexec-compiler.svg)](https://pypi.org/project/pyexec-compiler/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Complete documentation for all public APIs, internals, and built-in functionality.
+
+</div>
 
 ---
 
@@ -47,7 +60,7 @@ Numba  Native DLL   .wasm
 
 **Installation:**
 ```bash
-pip install pyexec-compiler
+pip install pyexec
 ```
 
 **JIT (fastest to start):**
@@ -1881,6 +1894,4 @@ For questions about:
 - **Performance**: Check Performance Tips
 - **Bugs**: Open GitHub issue
 - **Features**: See TECHNICAL.md for limitations
-
-
 
