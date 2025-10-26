@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyexec-compiler"
+version = "0.1.0"
+description = "Python JIT/AOT compiler with Numba integration and LLVM backend (Educational Project)"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+authors = [
+    {name = "PyExec Contributors"}
+]
+keywords = ["compiler", "jit", "aot", "llvm", "numba", "webassembly", "education"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "llvmlite>=0.43.0",
+    "numba>=0.59.0",
+    "numpy>=1.24.0",
+    "cffi>=1.17.0",
+    "nuitka>=2.5.0",
+    "ordered-set>=4.1.0",
+    "zstandard>=0.22.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/pyexec-compiler"
+Documentation = "https://github.com/yourusername/pyexec-compiler/tree/main/docs"
+Repository = "https://github.com/yourusername/pyexec-compiler"
+Issues = "https://github.com/yourusername/pyexec-compiler/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.8.0",
+    "ruff>=0.3.0",
+]
+full = [
+    # C compilers are system-level dependencies
+    # Windows: Install MSVC Build Tools or MinGW-w64
+    # Linux: sudo apt install gcc g++ (or equivalent)
+    # macOS: xcode-select --install
+]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
