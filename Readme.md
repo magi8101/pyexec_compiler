@@ -60,7 +60,7 @@ Numba  Native DLL   .wasm
 
 **Installation:**
 ```bash
-pip install pyexec
+pip install pyexec-compiler==0.1.1
 ```
 
 **JIT (fastest to start):**
@@ -1894,4 +1894,5 @@ For questions about:
 - **Performance**: Check Performance Tips
 - **Bugs**: Open GitHub issue
 - **Features**: See TECHNICAL.md for limitations
+
 
